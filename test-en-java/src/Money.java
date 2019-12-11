@@ -33,7 +33,7 @@ public class Money {
     }
 
     // Methods
-    public Money replaceMoney(Money m)
+    public Money add(Money m)
     /// Retourne une money
     {
       return  m;
@@ -44,7 +44,7 @@ public class Money {
         if (this.fCurrency == ncurrency)
         {
             int totalAmount = namount + this.fAmount;
-            return replaceMoney(new Money(totalAmount, ncurrency));
+            return add(new Money(totalAmount, ncurrency));
         }
 
         return null;
